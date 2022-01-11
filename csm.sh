@@ -370,12 +370,7 @@ createJsonTemplate() {
     echo '{
     "YouTube": "YouTube_Premium_result",
     "Netflix": "Netflix_result",
-    "DisneyPlus": "DisneyPlus_result",
-    "BilibiliHKMCTW": "BilibiliHKMCTW_result",
-    "BilibiliTW": "BilibiliTW_result",
-    "MyTVSuper": "MyTVSuper_result",
-    "BBC": "BBC_result",
-    "Abema": "AbemaTV_result"
+    "DisneyPlus": "DisneyPlus_result"
 }' >/root/media_test_tpl.json
 }
 
@@ -496,11 +491,6 @@ printInfo() {
 
 runCheck() {
     createJsonTemplate
-    MediaUnlockTest_BBCiPLAYER 4
-    MediaUnlockTest_MyTVSuper 4
-    MediaUnlockTest_BilibiliHKMCTW 4
-    MediaUnlockTest_BilibiliTW 4
-    MediaUnlockTest_AbemaTV_IPTest 4
     MediaUnlockTest_Netflix 4
     MediaUnlockTest_YouTube_Premium 4
     MediaUnlockTest_DisneyPlus 4
